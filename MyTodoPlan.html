@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Basic HTML Page</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.5; padding: 2rem; }
+        header { margin-bottom: 1rem; }
+        button { padding: .5rem 1rem; border-radius: 6px; border: 1px solid #888; background:#f3f3f3; cursor:pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <p>This is a minimal HTML page.</p>
+    </header>
+
+    <main>
+        <p>Click the button to see a simple JavaScript alert.</p>
+        <button id="helloBtn">Say Hello</button>
+    </main>
+
+    <script>
+        document.getElementById('helloBtn').addEventListener('click', () => {
+            alert('Hello — your basic HTML page is working!');
+        });
+    </script>
+</body>
+</html>
